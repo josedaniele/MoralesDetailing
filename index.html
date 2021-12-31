@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morales Detailing</title>
+    <link rel="stylesheet" href="./css/destino.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
     <header>
-    <h1>Morales Detailing</h1>
-    <img src="./multimedia/logo.jpg" alt="logo">
+        <h1>Morales Detailing</h1>
+        <img src="./multimedia/logo.jpg" alt="logo">
+    
+    
 </header>
-<nav>
-    <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="">Nosotros</a></li>
-        <li><a href="">Productos</a></li>
-        <li><a href="">Contacto</a></li>
-    </ul>
-</nav>
+
 <main>
     <h2>Servicios</h2>
     <ul>
@@ -27,7 +31,34 @@
         <li>Limpieza de interiores</li>
         <li>Limpieza de tapizados</li>
     </ul>
-    <img src="" alt="">
+    <h3>Elija su lavado</h3>
+    <form action="javascript:enviar()">
+    <label for="">Vehiculo</label>
+    <select name="" id="tipoLavado">
+        <option value="1">Automovil</option>
+        <option value="2">Camioneta</option>
+        <option value="3">Moto</option>
+        <option value="4">Automovil con lavado de interior</option>
+        <option value="5">Camioneta con lavado de interior</option>
+    </select>
+    <label for="">Medio de pago</label>
+    <select name="" id="medioPago">
+        <option value="E">Efectivo</option>
+        <option value="T">Tarjeta</option>
+    </select>
+    <button>Enviar</button>
+</form>
+    <h3>Datos del Usuario</h3>
+    <form action="javascript:enviando()">
+     <label for="name">Nombre:</label>
+     <input type="text" id="name">
+     <label for="lastname">Apellido:</label>
+     <input type="text" id="lastname">
+     <label for="email">Email</label>
+     <input type="text" id="email">
+     <button>Enviar</button>
+        
+    </form>
 
 
 </main>
