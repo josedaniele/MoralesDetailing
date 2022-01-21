@@ -1,28 +1,6 @@
-body {
-  background-color: black; }
-
-nav {
+main {
   background-color: #1A374D;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    nav ul li {
-      list-style-type: none; }
-
-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #1A374D;
-  padding-top: 15px;
-  padding-bottom: 15px; }
-  form label {
-    color: white;
-    margin-right: 25px;
-    margin-left: 25px; }
+  color: white; }
 
 h1 {
   color: white;
@@ -30,19 +8,17 @@ h1 {
   text-align: center; }
 
 h2 {
-  color: #2185D5;
+  color: #D8E9F0;
   font-size: 40px; }
 
 h3 {
-  color: #2185D5;
-  background-color: #9B0000;
+  color: #D8E9F0;
   text-align: center;
   font-size: 30px; }
 
 ul {
   list-style-type: circle; }
   ul li {
-    color: white;
     font-size: 20px; }
 
 a {
@@ -52,5 +28,31 @@ a {
   a :hover {
     transform: scale(1.05); }
 
-button {
-  margin-left: 10px; }
+form {
+  background-color: #33425B;
+  color: white;
+  padding: 20px;
+  border-radius: 10px; }
+
+.separador {
+  padding: 10px;
+  background-color: red; }
+
+.linksHeader {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end; }
+  .linksHeader :hover {
+    transform: scale(1.05); }
+
+.linkInstagram > img {
+  width: 60px;
+  margin-right: 1rem; }
+
+.linkUsuario > img {
+  width: 60px;
+  margin-right: 1rem; }
+
+#fondo {
+  background-image: url(../multimedia/proximamente.jpg); }

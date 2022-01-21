@@ -1,0 +1,65 @@
+$logo-size: 60px;
+$textos-size: 20px;
+main{
+    background-color:  #1A374D;
+    color: white;
+}
+h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+h2 {
+  color: #D8E9F0;
+  font-size: 40px;
+}
+h3 {
+  color: #D8E9F0;
+  text-align: center;
+  font-size: 30px;
+}
+ul {
+  list-style-type: circle;
+  color:  white;
+  li {
+    
+    font-size: 20px;
+    
+  }
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+  :hover {
+    transform: scale(1.05);
+  }
+}
+form{
+    background-color: #33425B;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.separador {
+  padding: 10px;
+  background-color: red;
+}
+.linksHeader {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  :hover {
+    transform: scale(1.05);
+  }
+}
+.linkInstagram > img {
+  width: $logo-size;
+  margin-right: 1rem;
+}
+.linkUsuario > img {
+  width: $logo-size;
+  margin-right: 1rem;
+}
