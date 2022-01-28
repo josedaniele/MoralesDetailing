@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./cssBootstrap/bootstrap.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">MoralesDetailing</a>
         <button
@@ -76,7 +76,7 @@
     <header class="container-fluid">
       <section class="row">
         <div class="col-md-4">
-          <img src="./multimedia/logo.jpg" alt="logo" />
+          <img src="./multimedia/logo.png" alt="logo" />
         </div>
         <div class="col-md-4">
           <h1 class="display-2">Inicio</h1>
@@ -88,7 +88,8 @@
                 ><img
                   src="./multimedia/instagramMobile.svg"
                   alt="instagram"
-                  class="img-fluid"
+                  class="img-fluid logos"
+                
               /></a>
             </li>
 
@@ -97,7 +98,7 @@
                 ><img
                   src="./multimedia/icons8-twitter.svg"
                   alt="twitter"
-                  class="img-fluid"
+                  class="img-fluid logos"
               /></a>
             </li>
           </ul>
@@ -114,10 +115,11 @@
         <li>Limpieza de tapizados</li>
       </ul>
 
-      
       <form action="javascript:enviar()">
         <h3>Elija su lavado conencional</h3>
-        <h4>(Para elegir lavados al detalle y demas vaya a la seccion "Servicios")</h4>
+        <h4>
+          (Para elegir lavados al detalle y demas vaya a la seccion "Servicios")
+        </h4>
         <label for="">Vehiculo</label>
         <select
           name=""
@@ -136,8 +138,8 @@
           <option value="E">Efectivo</option>
           <option value="T">Tarjeta</option>
         </select>
-      <h3>Datos del Usuario</h3>
-      
+        <h3>Datos del Usuario</h3>
+
         <div class="mb-3">
           <label for="name" class="form-label">Nombre:</label>
           <input
@@ -164,22 +166,28 @@
         </div>
         <button type="submit" class="btn btn-dark">Enviar</button>
       </form>
+      <button  class="btn btn-dark" id="ligthMode">Ligth Mode</button>
       <ul id="saludo" class="card-list"></ul>
+
+  
     </main>
-    <footer>
-      <h2>Datos de contacto</h2>
-      <ul>
-        <li>Tel: 3412568428</li>
-        <li>Mail: moralesdetailing@gmail.com</li>
-        <li>
-          <a
-            href="https://instagram.com/tmorales.detailing?utm_medium=copy_link"
-            >Instagram</a
-          >
-        </li>
-      </ul>
+    <footer class="container-fluid">
+      <h2 id="piePagina">Datos de contacto</h2>
+      <p>
+        Tel: 3412568428<br />
+        Mail: moralesdetailing@gmail.com<br />
+
+        <a href="#" class="linkInstagram"
+                ><img
+                  src="./multimedia/instagramMobile.svg"
+                  alt="instagram"
+                  class="img-fluid logos"
+                
+              /></a>
+      </p>
     </footer>
     <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./JS/index.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script

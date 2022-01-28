@@ -1,4 +1,7 @@
-//aplicacion de DOM a partir de la linea 63
+
+
+//aplicacion de JQUERY a partir de la linea 97
+
 class Cliente {
   constructor(nombre, apellido, email) {
     this.nombre = nombre;
@@ -90,3 +93,15 @@ function enviar() {
 
 
 const saludo = document.getElementById("saludo");
+
+//Jquery
+
+$(function(){
+  $("#ligthMode").click(function(){
+    $("body").css({"background-color": "white"});
+    $("h1").css({"color": "black"});
+    $("#piePagina").css({"color": "black"});
+    $("p").css({"color": "black"});
+    $(".logos").css({"filter":"hue-rotate(0deg) brightness(0%)"})
+  })
+})

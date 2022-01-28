@@ -17,7 +17,8 @@ h3 {
   font-size: 30px; }
 
 ul {
-  list-style-type: circle; }
+  list-style-type: circle;
+  color: white; }
   ul li {
     font-size: 20px; }
 
@@ -27,6 +28,9 @@ a {
   margin-right: 25px; }
   a :hover {
     transform: scale(1.05); }
+
+p {
+  color: white; }
 
 form {
   background-color: #33425B;
@@ -54,5 +58,8 @@ form {
   width: 60px;
   margin-right: 1rem; }
 
-#fondo {
+#fondoNosotros {
+  background-image: url(../multimedia/proximamente.jpg); }
+
+#fondoContacto {
   background-image: url(../multimedia/proximamente.jpg); }
