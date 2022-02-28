@@ -62,7 +62,7 @@ const DOMbotonVaciar = document.querySelector("#boton-vaciar");
 function crearProductos() {
   productos.forEach((info) => {
     const miNodo = document.createElement("div");
-    miNodo.classList.add("card", "col-sm-4");
+    miNodo.classList.add("card", "col-sm-3");
 
     const miNodoCardBody = document.createElement("div");
     miNodoCardBody.classList.add("card-body");
@@ -122,11 +122,11 @@ function actualizarCarrito() {
     }, 0);
 
     const miNodo = document.createElement("li");
-    miNodo.classList.add("list-group-item", "text-right", "mx-2");
+    miNodo.classList.add("list-group-item", "mx-2", "carrito");
     miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
-    miNodo.style.backgroundColor = "black"
-    miNodo.style.border = "none"
-    miNodo.style.color = "white"
+    miNodo.style.backgroundColor = "black";
+    miNodo.style.border = "none";
+    miNodo.style.color = "white";
     // Boton de borrar
     const miBoton = document.createElement("button");
     miBoton.classList.add("btn", "btn-danger", "mx-5");

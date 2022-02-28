@@ -19,7 +19,9 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img src="../multimedia/logo3.png" alt="logo" class="img-fluid" /></a>
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../multimedia/logo3.png" alt="logo" class="img-fluid"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,38 +36,15 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
+              <a class="nav-link" aria-current="page" href="../index.html"
                 >Inicio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              <a class="nav-link" href="./productos.html">Productos</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Servivios y Productos
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <a class="dropdown-item" href="./servicios.html">Servicios</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./productos.html">Productos</a>
-                </li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link active" href="./servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contacto.html">Contacto</a>
@@ -76,11 +55,9 @@
     </nav>
     <header class="container-fluid">
       <section class="row">
+        <div class="col-md-4"></div>
         <div class="col-md-4">
-        
-        </div>
-        <div class="col-md-4">
-          <h1 class="display-2">Productos</h1>
+          <h1 class="display-2">Servicios</h1>
         </div>
         <div class="col-md-4">
           <ul class="linksHeader">
@@ -106,9 +83,11 @@
       </section>
     </header>
     <main class="container-fluid">
+      <!--modo diurno y nocturno-->
       <button class="btn btn-dark" id="ligthMode">Ligth Mode</button>
       <button class="btn btn-dark" id="darkMode">Dark Mode</button>
       <section class="row">
+        <!--seccion para elegir lavados mas especificos-->
         <h2>Lavados al detalle</h2>
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
@@ -176,7 +155,7 @@
     </main>
     <footer class="container-fluid">
       <h2 id="piePagina">Datos de contacto</h2>
-      <p>
+      <p class="datosContacto">
         Tel: 3412568428<br />
         Mail: moralesdetailing@gmail.com<br />
 

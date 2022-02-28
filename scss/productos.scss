@@ -1,8 +1,18 @@
 #Fixed
 {
+    
     background-color: black;
     border-radius: 10px;
     padding: 10px;
-    position: fixed;
-    top: 250px;
+    margin-top: 50px;
+    
+    
+}
+#contenedor{
+    display: flex;
+    justify-content: center;
+}
+.carrito{
+    font-size: 20px;
+    font-weight: 400;
 }

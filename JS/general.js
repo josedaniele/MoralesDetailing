@@ -5,7 +5,7 @@ $(function () {
     $("body").css({ "background-color": "white" });
     $("h1").css({ color: "black" });
     $("#piePagina").css({ color: "black" });
-    $("p").css({ color: "black" });
+    $(".datosContacto").css({ color: "black" });
     $(".logos").css({ filter: "hue-rotate(0deg) brightness(0%)" });
     $("#ligthMode").fadeOut(10);
     $("#darkMode").fadeIn(1000);

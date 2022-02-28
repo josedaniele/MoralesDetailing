@@ -1,16 +1,16 @@
-const URLPOST = "../data/usuarios.json";
+const URLPOST = "https://jsonplaceholder.typicode.com/users";
 // constructor del usuario
 class Usuario {
   constructor(
     email,
-    contraseña,
+    contrasena,
     direccion,
     pisoApartamento,
     ciudad,
     provincia
   ) {
     this.email = email;
-    this.contraseña = contraseña;
+    this.contrasena = contrasena;
     this.direccion = direccion;
     this.pisoApartamento = pisoApartamento;
     this.ciudad = ciudad;
@@ -36,14 +36,13 @@ function enviar() {
     inputCity.value,
     inputState.value
   );
-    //enviar al array los datos capturados
+  //enviar al array los datos capturados
   usuarios.push(capturarDatos);
 
- 
   //guardar usuario en el storage
   const guardarUsuario = (
     email,
-    contraseña,
+    contrasena,
     direccion,
     pisoApartamento,
     ciudad,
@@ -51,7 +50,7 @@ function enviar() {
   ) => {
     localStorage.setItem(
       email,
-      contraseña,
+      contrasena,
       direccion,
       pisoApartamento,
       ciudad,
@@ -59,10 +58,7 @@ function enviar() {
     );
   };
   guardarUsuario("usuario", JSON.stringify(usuarios));
-//enviar al json los datos
-
-}
-$("#btn1").click(() => {
+  //enviar al json los datos
   $.ajax({
     type: "POST",
     url: URLPOST,
@@ -77,4 +73,4 @@ $("#btn1").click(() => {
       console.log("completo");
     },
   });
-});
+}
