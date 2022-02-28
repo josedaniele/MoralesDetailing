@@ -31,6 +31,24 @@ function enviar() {
       case "5":
         return 1300;
         break;
+      case "6":
+        return 5000;
+        break;
+      case "7":
+        return 7000;
+        break;
+      case "8":
+        return 10000;
+        break;
+      case "9":
+        return 3500;
+        break;
+      case "10":
+        return 12000;
+        break;
+      case "11":
+        return 14000;
+        break;
       default:
         return console.log("numero ingresado invalido");
         break;

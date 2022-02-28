@@ -1,35 +1,39 @@
 $logo-size: 60px;
 $textos-size: 20px;
+
+header{
+  padding: 3rem;
+}
+
 main{
     background-color:  #1A374D;
     color: white;
 }
 h1 {
   color: white;
-  font-size: 50px;
   text-align: center;
 }
 h2 {
   color: #D8E9F0;
-  font-size: 40px;
+  text-align: center;
 }
 h3 {
   color: #D8E9F0;
   text-align: center;
-  font-size: 30px;
 }
 ul {
-  list-style-type: circle;
+  
   color:  white;
   li {
     
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center;
     
   }
 }
 a {
   color: white;
-  text-decoration: none;
+  
   margin-right: 25px;
   :hover {
     transform: scale(1.05);
@@ -43,11 +47,10 @@ form{
     color: white;
     padding: 20px;
     border-radius: 10px;
+    
 }
-
-.separador {
-  padding: 10px;
-  background-color: red;
+label{
+  font-size: 20px;
 }
 .linksHeader {
   list-style-type: none;
@@ -65,4 +68,14 @@ form{
 .linkUsuario > img {
   width: $logo-size;
   margin-right: 1rem;
+}
+#piePagina{
+  text-align: left;
+}
+#darkMode{
+  display: none;
+  margin-top: 15px;
+}
+#ligthMode{
+  margin-top: 15px;
 }

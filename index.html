@@ -19,7 +19,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">MoralesDetailing</a>
+        <a class="navbar-brand" href="#"> <img src="./multimedia/logo3.png" alt="logo" class="img-fluid" /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -76,7 +76,6 @@
     <header class="container-fluid">
       <section class="row">
         <div class="col-md-4">
-          <img src="./multimedia/logo.png" alt="logo" />
         </div>
         <div class="col-md-4">
           <h1 class="display-2">Inicio</h1>
@@ -107,19 +106,55 @@
     </header>
 
     <main class="container-fluid">
+      <button  class="btn btn-dark" id="ligthMode">Ligth Mode</button>
+      <button  class="btn btn-dark" id="darkMode">Dark Mode</button>
+      <section class="row">
       <h2>Servicios</h2>
-      <ul>
-        <li>Lavados al detalle</li>
-        <li>Lavados Convencionales</li>
-        <li>Limpieza de interiores</li>
-        <li>Limpieza de tapizados</li>
-      </ul>
-
+      <div class="col-md-2"></div>
+      <div class="col-md-8" id="carrusel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/multimedia/pulido.jpg" class="d-block w-100" alt=" pulido auto" />
+            </div>
+            <div class="carousel-item">
+              <img src="/multimedia/tapizado.jpg" class="d-block w-100" alt="limpieza tapizado" />
+            </div>
+            <div class="carousel-item">
+              <img src="/multimedia/lavado.jpg" class="d-block w-100" alt="lavado de auto" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+      <div class="col-lg-2"></div>
+        <div class="col-lg-8" id="turnos">
       <form action="javascript:enviar()">
-        <h3>Elija su lavado conencional</h3>
-        <h4>
+        <h3>Turnos Rapidos</h3>
+        <span>
           (Para elegir lavados al detalle y demas vaya a la seccion "Servicios")
-        </h4>
+        </span><br>
         <label for="">Vehiculo</label>
         <select
           name=""
@@ -139,21 +174,6 @@
           <option value="T">Tarjeta</option>
         </select>
         <h3>Datos del Usuario</h3>
-
-        <div class="mb-3">
-          <label for="name" class="form-label">Nombre:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            aria-describedby="emailHelp"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="lastname" class="form-label">Apellido:</label>
-          <input type="text" class="form-control" id="lastname" required />
-        </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email:</label>
           <input
@@ -164,10 +184,24 @@
             required
           />
         </div>
+        <label for="password" class="form-label">Contraseña:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          aria-describedby="emailHelp"
+          required
+        />
+      
         <button type="submit" class="btn btn-dark">Enviar</button>
       </form>
-      <button  class="btn btn-dark" id="ligthMode">Ligth Mode</button>
+    </div>
+      
+      
       <ul id="saludo" class="card-list"></ul>
+    
+      
+      
 
   
     </main>
@@ -189,6 +223,7 @@
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./JS/index.js"></script>
+    <script src="./JS/general.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

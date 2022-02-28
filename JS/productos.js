@@ -4,14 +4,16 @@ const productos = [
     nombre: "Shampoo Elite",
     precio: 600,
     imagen: "../multimedia/shampooToxicShine.png",
-    descripcion: 'Shampoo que posee un mix de ceras de máxima calidad y potenciadores de brillo con aroma a coco y banana. PH neutro, alto poder espumógeno y de limpieza. No barre ceras ni selladores.',
+    descripcion:
+      "Shampoo que posee un mix de ceras de máxima calidad y potenciadores de brillo con aroma a coco y banana. PH neutro, alto poder espumógeno y de limpieza. No barre ceras ni selladores.",
   },
   {
     id: 2,
     nombre: "Cera Toxic Shine",
     precio: 800,
     imagen: "../multimedia/ceraToxicShine.png",
-    descripcion: 'Es un Quick Detail elaborado con un gran porcentaje de cera de carnauba, la cual otorga un excelente brillo con efecto húmedo y protege la superficie del vehículo',
+    descripcion:
+      "Es un Quick Detail elaborado con un gran porcentaje de cera de carnauba, la cual otorga un excelente brillo con efecto húmedo y protege la superficie del vehículo",
   },
   {
     id: 3,
@@ -19,14 +21,30 @@ const productos = [
     precio: 1000,
     imagen: "../multimedia/extremeDetail.png",
     descripcion:
-      'Quick Detail con aroma a durazno, formulado para otorgar un brillo único. Puede ser utilizado en superficies húmedas y secas.',
+      "Quick Detail con aroma a durazno, formulado para otorgar un brillo único. Puede ser utilizado en superficies húmedas y secas.",
   },
   {
     id: 4,
     nombre: "Perfume Toxic Shine",
     precio: 400,
     imagen: "../multimedia/perfumeToxicshine.jpg",
-    descripcion: 'fragancia a base de alcohol con olor a vainilla',
+    descripcion: "fragancia a base de alcohol con olor a vainilla",
+  },
+  {
+    id: 5,
+    nombre: "Lava Crush",
+    precio: 600,
+    imagen: "../multimedia/lavaCrush.png",
+    descripcion:
+      "Sellador diseñado para proteger la pintura del vehículo. Formula de polímeros siliconados y resinas que aseguran brillo, repelencia del agua y suavidad al tacto.",
+  },
+  {
+    id: 6,
+    nombre: "NTP",
+    precio: 750,
+    imagen: "../multimedia/ntp.png",
+    descripcion:
+      "Restaura y reacondiciona plásticos y gomas del exterior dejando una terminación satinada. No daña ni deteriora la superficie. Posee pigmentos negros con aroma a café.",
   },
 ];
 
@@ -73,7 +91,7 @@ function crearProductos() {
 
     miNodoCardBody.appendChild(miNodoImagen);
     miNodoCardBody.appendChild(miNodoTitle);
-    miNodoCardBody.appendChild(miNodoDescription)
+    miNodoCardBody.appendChild(miNodoDescription);
     miNodoCardBody.appendChild(miNodoPrecio);
     miNodoCardBody.appendChild(miNodoBoton);
     miNodo.appendChild(miNodoCardBody);
@@ -106,6 +124,9 @@ function actualizarCarrito() {
     const miNodo = document.createElement("li");
     miNodo.classList.add("list-group-item", "text-right", "mx-2");
     miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
+    miNodo.style.backgroundColor = "black"
+    miNodo.style.border = "none"
+    miNodo.style.color = "white"
     // Boton de borrar
     const miBoton = document.createElement("button");
     miBoton.classList.add("btn", "btn-danger", "mx-5");
