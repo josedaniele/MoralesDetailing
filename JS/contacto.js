@@ -65,7 +65,13 @@ function enviar() {
     data: usuarios,
     success: function (response) {
       console.log("exito");
-    },
+      const card = document.createElement("li");
+      card.classList.add("card");
+      card.innerHTML =
+        "<h3>Bienvenido a Morales Detailing</h3>" +
+        "<span>Gracias por elegirnos!<span>";
+      saludo.appendChild(card)
+      },
     error: function (err) {
       console.log("error");
     },
@@ -74,3 +80,4 @@ function enviar() {
     },
   });
 }
+const saludo = document.getElementById("saludo");
